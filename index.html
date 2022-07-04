@@ -18,12 +18,19 @@
 
 <body>
 
+    <!-- Istanza di Vue -->
     <div id="root">
         <div class="container">
             <div class="row text-center mt-5">
                 <div class="col-12">
-                    <h1> {{ message }} </h1>
+                    <h1 class="fw-bold"> {{ message }} </h1>
                     <input type="text" v-model="message" placeholder="Scrivi qualcosa">
+                </div>
+            </div>
+            <div class="row text-center mt-5">
+                <div class="col-12">
+                    <img :src="imageSource" alt="">
+                    <input class="mt-3" type="text" v-model="imageSource" placeholder="Inserisci un link immagine">
                 </div>
             </div>
         </div>
